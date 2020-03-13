@@ -58,7 +58,7 @@
     </style>
 </head>
 <body>
-<p> this is a place to save journal entries on your local machine. fill out the form and save the file. It saves as a .txt in the download section of your machine.   
+<p> This is a place to save journal entries on your local machine. Fill out the form and save the file. It saves as a .txt in the download section of your machine.   
     <div>
         
         <!--Add few elements to the form-->
@@ -81,7 +81,7 @@
             </select>
         </div>
         <div>
-            <textarea id="msg" name="msg" placeholder="Write Journal Entry ..." style="height:100px"></textarea>
+            <textarea id="msg" name="msg" placeholder="Write a journal entry ..." style="height:100px"></textarea>
         </div>
         <div>
             <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
@@ -89,7 +89,7 @@
 
     </div>
 	<UL>
-				<li><a href="two.html">TWO</a></li>
+				<li><a href="two.html">Second Page</a></li>
 	</UL>
 </body>
 <script>
@@ -112,7 +112,7 @@
         
         // Convert the text to BLOB.
         const textToBLOB = new Blob([data], { type: 'text/plain' });
-        const sFileName = 'formData.txt';	   // The file to save the data.
+        const sFileName = 'journal.txt';	   // The file to save the data.
 
         let newLink = document.createElement("a");
         newLink.download = sFileName;
